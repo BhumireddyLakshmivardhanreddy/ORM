@@ -43,7 +43,7 @@ class EmployeeAdmin(admin.ModelAdmin):
 ## OUTPUT
 
 ![alt text](<bhumireddy/Screenshot 2024-03-12 204128.png>)
-![alt text](<bhumireddy/Screenshot 2024-03-12 205556.png>)
+
 
 ## RESULT
 Thus the program for creating a database using ORM hass been executed successfully
