@@ -3,7 +3,8 @@
 
 ## AIM
 To develop a Django application to store and retrieve data from a Railway database using Object Relational Mapping(ORM).
-
+## Entity Relationship Diagram
+![Screenshot 2024-03-12 205556](https://github.com/BhumireddyLakshmivardhanreddy/ORM/assets/148514637/7bbda771-b87c-4098-836f-e214e58980fa)
 
 ## DESIGN STEPS
 
@@ -44,9 +45,6 @@ class TrainAdmin(admin.ModelAdmin):
 ## OUTPUT
 
 ![WhatsApp Image 2024-03-19 at 09 57 36_db24072f](https://github.com/BhumireddyLakshmivardhanreddy/ORM/assets/148514637/b3465207-8603-4e33-811a-1d3f4ccff356)
-![Screenshot 2024-03-12 205556](https://github.com/BhumireddyLakshmivardhanreddy/ORM/assets/148514637/7bbda771-b87c-4098-836f-e214e58980fa)
-
-
 
 ## RESULT
 Thus the program for creating a database using ORM hass been executed successfully
