@@ -1,5 +1,5 @@
 # Ex02 Django ORM Web Application
-## Date: 10/03/2024
+## Date: 19/03/2024
 
 ## AIM
 To develop a Django application to store and retrieve data from a Book database using Object Relational Mapping(ORM).
@@ -23,26 +23,31 @@ Execute Django admin and create details for 10 books
 ```
 admin.py
 from django.contrib import admin
-from .models import Employee,EmployeeAdmin
-admin.site.register(Employee,EmployeeAdmin)
+
+from .models import Train, TrainAdmin
+
+admin.site.register(Train,TrainAdmin)
 
 models.py
 from django.db import models
 from django.contrib import admin
-class Employee (models.Model):
-    eid=models.CharField(max_length=20,primary_key=True)
-    name=models.CharField(max_length=100)
-    salary=models.IntegerField()
-    age=models.IntegerField()
-    email=models.EmailField()
+class Train(models.Model):
+    Train_code=models.CharField(max_length=20,primary_key=True)
+    Train_name=models.CharField(max_length=100)
+    start_time=models.DateTimeField()
+    End_time=models.DateTimeField()
+    start_station_code=models.CharField(max_length=20)
+    End_station_code=models.CharField(max_length=20)
  
-class EmployeeAdmin(admin.ModelAdmin):
-    list_display=('eid','name','salary','age','email')
+class TrainAdmin(admin.ModelAdmin):
+    list_display=('Train_code','Train_name','start_time','End_time','start_station_code','End_station_code')
 ```
 
 ## OUTPUT
 
-![alt text](<bhumireddy/Screenshot 2024-03-12 204128.png>)
+![WhatsApp Image 2024-03-19 at 09 57 36_db24072f](https://github.com/BhumireddyLakshmivardhanreddy/ORM/assets/148514637/b3465207-8603-4e33-811a-1d3f4ccff356)
+![Screenshot 2024-03-12 205556](https://github.com/BhumireddyLakshmivardhanreddy/ORM/assets/148514637/7bbda771-b87c-4098-836f-e214e58980fa)
+
 
 
 ## RESULT
